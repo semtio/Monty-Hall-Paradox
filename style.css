@@ -1,0 +1,105 @@
+body {
+    background-color: #333;
+    color: #fff;
+
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.door1,
+.door2 {
+    background-image: url(./img/dc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 250px;
+}
+
+.door3 {
+    background-image: url(./img/do.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 250px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(21, 0, 255);
+}
+
+.flex-for-doors {
+    display: flex;
+
+    border: solid rgb(0, 255, 26);
+
+
+    justify-content: space-between;
+}
+
+.m-top {
+    margin-top: 50px;
+}
+
+.pos-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: solid red;
+    /* margin: 0 500px; */
+
+    text-align: center;
+}
+
+.section-50-p {
+    width: 50%;
+}
+
+.btn50p button {
+    width: 50%;
+}
+
+.flex-button {
+    display: flex;
+}
+
+button {
+    margin: 5px;
+
+}
+
+input {
+    margin: 0 5px;
+    text-align: center;
+}
+
+button,
+input {
+    font-size: 1em;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+/* анимация кнопок */
+
+.hide {
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+/* конец */
