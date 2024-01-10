@@ -74,27 +74,27 @@ h3 {
 .flex {
     display: flex;
     flex-direction: column;
-    border: solid rgb(21, 0, 255);
+    /* border: solid rgb(21, 0, 255); */
 }
 
 .flex-for-doors {
     display: flex;
 
-    border: solid rgb(0, 255, 26);
+    /* border: solid rgb(0, 255, 26); */
 
 
     justify-content: space-between;
 }
 
 .border-w {
-    border: solid #fff;
+    /* border: solid #fff; */
 }
 
 .pos-center {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: solid red;
+    /* border: solid red; */
 
     transition: 1s;
     text-align: center;
