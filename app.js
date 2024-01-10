@@ -21,3 +21,7 @@ document.getElementById('buttonToHide').addEventListener('click', function () {
     }, 1000); // время в миллисекундах, равное длительности анимации
 });
 // анимация кнопок конец
+
+// полная версия
+
+// полная версия конец

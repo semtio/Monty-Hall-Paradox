@@ -2,7 +2,7 @@ body {
     background-color: #333;
     color: #fff;
 
-    font-size: 2em;
+    font-size: 1em;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
 }
@@ -46,9 +46,11 @@ h3 {
     justify-content: space-between;
 }
 
-.m-top {
-    margin-top: 50px;
+.border-w {
+    border: solid #fff;
 }
+
+
 
 .pos-center {
     display: flex;
@@ -57,11 +59,12 @@ h3 {
     border: solid red;
     /* margin: 0 500px; */
 
+    transition: 1s;
     text-align: center;
 }
 
-.section-50-p {
-    width: 50%;
+.m {
+    display: flex;
 }
 
 .btn50p button {
@@ -100,6 +103,17 @@ input {
 .show {
     opacity: 1;
     transition: opacity .3s ease;
+}
+
+/* конец */
+
+/* полная версия */
+.m-top {
+    margin-top: 50px;
+}
+
+.whith-50-p {
+    width: 50%;
 }
 
 /* конец */
