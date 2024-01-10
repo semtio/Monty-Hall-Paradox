@@ -24,4 +24,14 @@ document.getElementById('buttonToHide').addEventListener('click', function () {
 
 // полная версия
 
+let question = document.querySelector('.question');
+let poscenter = document.querySelector('.pos-center');
+let rulesOfGame = document.querySelector('.rules-of-game');
+
+question.addEventListener('click', function () {
+    poscenter.classList.toggle('margin-0-500');
+    rulesOfGame.classList.toggle('display-none');
+    // rulesOfGame.style.display = 'block';
+});
+
 // полная версия конец

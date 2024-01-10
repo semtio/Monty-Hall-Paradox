@@ -7,11 +7,48 @@ body {
     font-weight: 200;
 }
 
-h1,
+
 h2,
 h3 {
     font-size: 1em;
     font-weight: 300;
+}
+
+.content-block-relative {
+    position: relative;
+}
+
+.question {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    opacity: .8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50px;
+
+    font-size: 1.2em;
+    font-weight: 300;
+    background-color: #fff;
+    color: #000;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.question:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: .3s;
 }
 
 .door1,
@@ -19,16 +56,19 @@ h3 {
     background-image: url(./img/dc.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 150px;
-    height: 250px;
+
 }
 
 .door3 {
     background-image: url(./img/do.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 150px;
-    height: 250px;
+
+}
+
+.flex-for-doors img {
+    width: 155px;
+    height: auto;
 }
 
 .flex {
@@ -50,17 +90,22 @@ h3 {
     border: solid #fff;
 }
 
-
-
 .pos-center {
     display: flex;
     justify-content: center;
     flex-direction: column;
     border: solid red;
-    /* margin: 0 500px; */
 
     transition: 1s;
     text-align: center;
+}
+
+.margin-0-500 {
+    margin: 0 500px;
+}
+
+.display-none {
+    display: none;
 }
 
 .m {
@@ -135,6 +180,11 @@ input {
 
 .whith-50-p {
     width: 50%;
+}
+
+.rules-of-game {
+    padding: 20px;
+    font-size: 1.3em;
 }
 
 /* конец */

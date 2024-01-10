@@ -16,31 +16,39 @@
 <body>
     <div class="m border-w">
         <div class="pos-center whith-50-p">
-            <h1>Парадокс Монти Холла</h1>
+            <div class="content-block-relative">
 
-            <div class="flex">
-                <span>Ручной режим</span>
-                <input type="number">
-                <button>ИГРАТЬ</button>
-            </div>
+                <div class="question">?</div>
 
-            <div class="flex m-top">
-                <button id="buttonToHide">АВТО ИГРА</button>
+                <h1>Парадокс Монти Холла</h1>
 
-                <div class="btn50p flex-button">
-                    <button id="buttonToShow1" style="display: none;">МЕНЯТЬ</button>
-                    <button id="buttonToShow2" style="display: none;">НЕ МЕНЯТЬ</button>
+                <div class="flex">
+
+                    <span>Ручной режим</span>
+                    <input type="number">
+                    <button>ИГРАТЬ</button>
                 </div>
-            </div>
 
-            <div class="flex-for-doors m-top">
-                <div class="door1"></div>
-                <div class="door2"></div>
-                <div class="door3"></div>
+                <div class="flex m-top">
+                    <button id="buttonToHide">АВТО ИГРА</button>
+
+                    <div class="btn50p flex-button">
+                        <button id="buttonToShow1"
+                            style="display: none; color: #fff; background-color: #5bff58;">МЕНЯТЬ</button>
+                        <button id="buttonToShow2" style="display: none; color: #fff; background-color: #ff5858;">НЕ
+                            МЕНЯТЬ</button>
+                    </div>
+                </div>
+
+                <div class="flex-for-doors m-top">
+                    <img src="img/dc.png" alt="door png">
+                    <img src="img/dc.png" alt="door png">
+                    <img src="img/do.png" alt="door png">
+                </div>
             </div>
         </div>
 
-        <div class="whith-50-p">
+        <div class="whith-50-p rules-of-game" margin: 0 500px;">
             <h2>Правила игры:</h2>
             <h3>
                 Это известная задача теории вероятностей, которая основана на американском телевизионном шоу. Вот
@@ -91,7 +99,7 @@
 
         <div class="footer-block_github">
             <img src="./img/darck.svg" alt="Semyon Dementiev Github">
-            <a href="https://github.com/semtio/Monty-Hall-Paradox">github.com</a>
+            <a target="_blank" href="https://github.com/semtio/Monty-Hall-Paradox">github.com</a>
         </div>
 
     </div>
