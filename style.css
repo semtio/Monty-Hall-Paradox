@@ -96,9 +96,6 @@ input {
 .footer-block {
     display: flex;
     justify-content: center;
-
-    /* position: absolute; */
-    /* margin-bottom: 0; */
 }
 
 .footer-block a {
