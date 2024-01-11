@@ -1,57 +1,35 @@
-// анимация кнопок
-document.getElementById('buttonToHide').addEventListener('click', function () {
-    var buttonToHide = this;
-    var buttonToShow1 = document.getElementById('buttonToShow1');
-    var buttonToShow2 = document.getElementById('buttonToShow2');
+// Функции для добавления/удаления классов и изменения стиля display
+function hideElement(element) {
+    element.classList.add('hide');
+    setTimeout(() => element.style.display = 'none', 300);
+}
 
-    // Начинаем с плавного скрытия кнопки
-    buttonToHide.classList.add('hide');
-    manualMode.classList.add('hide');
+function showElement(element) {
+    element.style.display = 'block';
+    element.classList.add('show');
+}
 
-    // Ждем завершения анимации скрытия
-    setTimeout(function () {
-        buttonToHide.style.display = 'none';
-
-        // Показываем другие кнопки
-        buttonToShow1.style.display = 'block';
-        buttonToShow2.style.display = 'block';
-        hide_manualMode1.style.display = 'block';
-
-
-        // Плавно увеличиваем их прозрачность
-        buttonToShow1.classList.add('show');
-        buttonToShow2.classList.add('show');
-    }, 300); // время в миллисекундах, равное длительности анимации
-});
-// анимация кнопок конец
-
-// Ручной режим
+// Выборка элементов
+let buttonToHide = document.getElementById('buttonToHide');
+let buttonsToShow = [document.getElementById('buttonToShow1'), document.getElementById('buttonToShow2'), document.querySelector('#hide_manual-mode1')];
 let manualMode = document.querySelector('.manual-mode');
-let hide_manualMode1 = document.querySelector('#hide_manual-mode1');
-let hide_manualMode2 = document.querySelector('#hide_manual-mode2');
+let manualModeButtons = [document.querySelector('#hide_manual-mode1'), document.querySelector('#hide_manual-mode2')];
 
-hide_manualMode1.style.display = 'none';
-hide_manualMode2.style.display = 'none';
+// Скрытие элементов в начале
+manualModeButtons.forEach(hideElement);
+
+// Обработчики событий
+buttonToHide.addEventListener('click', function () {
+    hideElement(this);
+    hideElement(manualMode);
+    buttonsToShow.forEach(showElement);
+});
 
 manualMode.addEventListener('click', function () {
-    manualMode = this;
-    hide_manualMode1 = document.querySelector('#hide_manual-mode1');
-    hide_manualMode2 = document.querySelector('#hide_manual-mode2');
-
-    manualMode.classList.add('hide');
-
-    setTimeout(function () {
-        buttonToHide.style.display = 'none';
-
-        // Показываем другие кнопки
-        hide_manualMode1.style.display = 'block';
-        hide_manualMode2.style.display = 'block';
-
-        // Плавно увеличиваем их прозрачность
-        hide_manualMode1.classList.add('show');
-    }, 300);
+    hideElement(this);
+    hideElement(buttonToHide); // Добавлено скрытие buttonToHide
+    manualModeButtons.forEach(showElement);
 });
-//
 
 // полная версия
 
@@ -69,7 +47,3 @@ question.addEventListener('click', function () {
 });
 
 // полная версия конец
-
-// Ручной режим
-
-// конец
