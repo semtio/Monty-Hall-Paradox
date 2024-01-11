@@ -45,5 +45,4 @@ question.addEventListener('click', function () {
 
     question.innerHTML == '?' ? question.innerHTML = 'X' : question.innerHTML = '?';
 });
-
 // полная версия конец
